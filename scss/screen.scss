@@ -2,35 +2,87 @@
 // Imports
 
 @import "susy";
+@import "modular-scale";
 
+
+// Susy Grid setup
 $map: (
   columns: 12,
   gutters: .5,
   math: fluid,
 );
-
 @include layout($map float inside);
+
+// Modular Scale
+$ms-base: 1rem 3rem;
+$ms-ratio: $golden;
+
+// Variables
+$light-gray: #ddd;
+
+/* -------------------------------------------------------------------------*/
+/* Typography */
+h1,h2,h3,h4,h5,h6 {
+  margin: 0 0 ms(0) 0;
+}
+h1 { font-size: ms(5); }
+h2 { font-size: ms(4); }
+h3 { font-size: ms(3); }
+h4 { font-size: ms(2); }
+h5 { font-size: ms(1); }
+h6 { font-size: ms(0); }
+
+p {
+  font-size: ms(0);
+  line-height: 1.5;
+  margin: 0 0 ms(2) 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  font-size: ms(0);
+  li {
+    margin-bottom: ms(0)/2;
+  }
+}
+
+blockquote {
+  border-left: solid 3px $light-gray;
+  padding: 6px 10% 6px 20px;
+  p {
+    margin-bottom: 0;
+    font-style: italic;
+  }
+}
+
+a { text-decoration: none; }
+
+hr {
+  border-style: solid;
+  border-width: 1px 0 0;
+  border-color: $light-gray;
+  margin: ms(0) auto ms(1);
+  width: ms(6);
+}
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
 
-img { max-width: 100%; }
+img {
+  max-width: 100%;
+  margin-bottom: ms(0);
+}
 
 * { @include border-box-sizing; }
 
-body {
-  @include container(70em);
-}
+body { @include container(70em); }
 
 .site-title {
   text-align: center;
   @include span(full);
 }
 
-.blog-post {
-  @include span(75%);
-}
+.blog-post { @include span(75%); }
 
-.sidebar {
-  @include span(25%);
-}
+.sidebar { @include span(25%); }
