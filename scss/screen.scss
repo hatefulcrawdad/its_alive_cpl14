@@ -1,17 +1,37 @@
 // ---------------------------------------------------------------------------
 // Imports
 
-@import "base";
+@import "susy";
+
+$map: (
+  columns: 12,
+  gutters: .5,
+  math: fluid,
+);
+
+@include layout($map float inside);
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
 
-.container {
-  @include container;
-  @include susy-grid-background;
+img { max-width: 100%; }
+
+* { @include border-box-sizing; }
+
+body {
+  @include container(70em);
+  @include show-grid(overlay);
 }
 
 .site-title {
   text-align: center;
+  @include span(full);
 }
 
+.blog-post {
+  @include span(75%);
+}
+
+.sidebar {
+  @include span(25%);
+}
