@@ -20,7 +20,6 @@ img { max-width: 100%; }
 
 body {
   @include container(70em);
-  @include show-grid(overlay);
 }
 
 .site-title {
