@@ -30,3 +30,8 @@
   display: table;
   clear: both;
 }
+
+/* line 14, ../scss/screen.scss */
+.site-title {
+  text-align: center;
+}
