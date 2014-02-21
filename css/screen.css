@@ -1,76 +1,76 @@
 /* -------------------------------------------------------------------------*/
 /* Typography */
-/* line 25, ../scss/screen.scss */
+/* line 23, ../scss/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1rem 0;
 }
 
-/* line 28, ../scss/screen.scss */
+/* line 26, ../scss/screen.scss */
 h1 {
   font-size: 3rem;
 }
 
-/* line 29, ../scss/screen.scss */
+/* line 27, ../scss/screen.scss */
 h2 {
   font-size: 2.61803rem;
 }
 
-/* line 30, ../scss/screen.scss */
+/* line 28, ../scss/screen.scss */
 h3 {
   font-size: 1.8541rem;
 }
 
-/* line 31, ../scss/screen.scss */
+/* line 29, ../scss/screen.scss */
 h4 {
   font-size: 1.61803rem;
 }
 
-/* line 32, ../scss/screen.scss */
+/* line 30, ../scss/screen.scss */
 h5 {
   font-size: 1.1459rem;
 }
 
-/* line 33, ../scss/screen.scss */
+/* line 31, ../scss/screen.scss */
 h6 {
   font-size: 1rem;
 }
 
-/* line 35, ../scss/screen.scss */
+/* line 33, ../scss/screen.scss */
 p {
   font-size: 1rem;
   line-height: 1.5;
   margin: 0 0 1.61803rem 0;
 }
 
-/* line 41, ../scss/screen.scss */
+/* line 39, ../scss/screen.scss */
 ul,
 ol {
   margin: 0;
   font-size: 1rem;
 }
-/* line 45, ../scss/screen.scss */
+/* line 43, ../scss/screen.scss */
 ul li,
 ol li {
   margin-bottom: 0.5rem;
 }
 
-/* line 50, ../scss/screen.scss */
+/* line 48, ../scss/screen.scss */
 blockquote {
   border-left: solid 3px #dddddd;
   padding: 6px 10% 6px 20px;
 }
-/* line 53, ../scss/screen.scss */
+/* line 51, ../scss/screen.scss */
 blockquote p {
   margin-bottom: 0;
   font-style: italic;
 }
 
-/* line 59, ../scss/screen.scss */
+/* line 57, ../scss/screen.scss */
 a {
   text-decoration: none;
 }
 
-/* line 61, ../scss/screen.scss */
+/* line 59, ../scss/screen.scss */
 hr {
   border-style: solid;
   border-width: 1px 0 0;
@@ -81,7 +81,7 @@ hr {
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
-/* line 72, ../scss/screen.scss */
+/* line 71, ../scss/screen.scss */
 img {
   max-width: 100%;
   margin-bottom: 1rem;
@@ -94,7 +94,7 @@ img {
   box-sizing: border-box;
 }
 
-/* line 79, ../scss/screen.scss */
+/* line 78, ../scss/screen.scss */
 body {
   max-width: 70em;
   margin-left: auto;
@@ -107,7 +107,7 @@ body::after {
   clear: both;
 }
 
-/* line 81, ../scss/screen.scss */
+/* line 80, ../scss/screen.scss */
 .site-title {
   text-align: center;
   width: 100%;
@@ -116,7 +116,7 @@ body::after {
   padding-right: 1.38889%;
 }
 
-/* line 86, ../scss/screen.scss */
+/* line 85, ../scss/screen.scss */
 .blog-post {
   width: 75%;
   float: left;
@@ -124,7 +124,7 @@ body::after {
   padding-right: 1.38889%;
 }
 
-/* line 88, ../scss/screen.scss */
+/* line 87, ../scss/screen.scss */
 .sidebar {
   width: 25%;
   float: left;
