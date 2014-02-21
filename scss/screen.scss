@@ -1,15 +1,14 @@
-// ---------------------------------------------------------------------------
 // Imports
-
 @import "susy";
 
+// Susy setup
 $map: (
   columns: 12,
   gutters: .5,
   math: fluid,
 );
-
 @include layout($map float inside);
+
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
@@ -18,19 +17,13 @@ img { max-width: 100%; }
 
 * { @include border-box-sizing; }
 
-body {
-  @include container(70em);
-}
+body { @include container(70em); }
 
 .site-title {
   text-align: center;
   @include span(full);
 }
 
-.blog-post {
-  @include span(75%);
-}
+.blog-post { @include span(75%); }
 
-.sidebar {
-  @include span(25%);
-}
+.sidebar { @include span(25%); }

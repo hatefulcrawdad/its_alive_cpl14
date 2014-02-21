@@ -1,6 +1,6 @@
 /* -------------------------------------------------------------------------*/
 /* Layout */
-/* line 17, ../scss/screen.scss */
+/* line 16, ../scss/screen.scss */
 img {
   max-width: 100%;
 }
@@ -12,7 +12,7 @@ img {
   box-sizing: border-box;
 }
 
-/* line 21, ../scss/screen.scss */
+/* line 20, ../scss/screen.scss */
 body {
   max-width: 70em;
   margin-left: auto;
@@ -25,7 +25,7 @@ body::after {
   clear: both;
 }
 
-/* line 25, ../scss/screen.scss */
+/* line 22, ../scss/screen.scss */
 .site-title {
   text-align: center;
   width: 100%;
@@ -34,7 +34,7 @@ body::after {
   padding-right: 1.38889%;
 }
 
-/* line 30, ../scss/screen.scss */
+/* line 27, ../scss/screen.scss */
 .blog-post {
   width: 75%;
   float: left;
@@ -42,7 +42,7 @@ body::after {
   padding-right: 1.38889%;
 }
 
-/* line 34, ../scss/screen.scss */
+/* line 29, ../scss/screen.scss */
 .sidebar {
   width: 25%;
   float: left;
