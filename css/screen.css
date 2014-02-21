@@ -1,76 +1,76 @@
 /* -------------------------------------------------------------------------*/
 /* Typography */
-/* line 25, ../scss/screen.scss */
+/* line 24, ../scss/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1rem 0;
 }
 
-/* line 28, ../scss/screen.scss */
+/* line 27, ../scss/screen.scss */
 h1 {
   font-size: 3rem;
 }
 
-/* line 29, ../scss/screen.scss */
+/* line 28, ../scss/screen.scss */
 h2 {
   font-size: 2.61803rem;
 }
 
-/* line 30, ../scss/screen.scss */
+/* line 29, ../scss/screen.scss */
 h3 {
   font-size: 1.8541rem;
 }
 
-/* line 31, ../scss/screen.scss */
+/* line 30, ../scss/screen.scss */
 h4 {
   font-size: 1.61803rem;
 }
 
-/* line 32, ../scss/screen.scss */
+/* line 31, ../scss/screen.scss */
 h5 {
   font-size: 1.1459rem;
 }
 
-/* line 33, ../scss/screen.scss */
+/* line 32, ../scss/screen.scss */
 h6 {
   font-size: 1rem;
 }
 
-/* line 35, ../scss/screen.scss */
+/* line 34, ../scss/screen.scss */
 p {
   font-size: 1rem;
   line-height: 1.5;
   margin: 0 0 1.61803rem 0;
 }
 
-/* line 41, ../scss/screen.scss */
+/* line 40, ../scss/screen.scss */
 ul,
 ol {
   margin: 0;
   font-size: 1rem;
 }
-/* line 45, ../scss/screen.scss */
+/* line 44, ../scss/screen.scss */
 ul li,
 ol li {
   margin-bottom: 0.5rem;
 }
 
-/* line 50, ../scss/screen.scss */
+/* line 49, ../scss/screen.scss */
 blockquote {
   border-left: solid 3px #dddddd;
   padding: 6px 10% 6px 20px;
 }
-/* line 53, ../scss/screen.scss */
+/* line 52, ../scss/screen.scss */
 blockquote p {
   margin-bottom: 0;
   font-style: italic;
 }
 
-/* line 59, ../scss/screen.scss */
+/* line 58, ../scss/screen.scss */
 a {
   text-decoration: none;
 }
 
-/* line 61, ../scss/screen.scss */
+/* line 60, ../scss/screen.scss */
 hr {
   border-style: solid;
   border-width: 1px 0 0;
