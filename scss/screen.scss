@@ -1,11 +1,12 @@
 // Imports
 @import "susy";
 @import "modular-scale";
+@import "scut";
 
 // Susy Grid setup
 $map: (
   columns: 12,
-  gutters: .5,
+  gutters: 1.5,
   math: fluid,
 );
 @include layout($map float inside);
@@ -15,7 +16,8 @@ $ms-base: 1rem 3rem;
 $ms-ratio: $golden;
 
 // Variables
-$light-gray: #ddd;
+$light-gray: #ddd !default;
+$link-color: blue !default;
 
 
 /* -------------------------------------------------------------------------*/
@@ -40,6 +42,7 @@ ul,
 ol {
   margin: 0;
   font-size: ms(0);
+  @include scut-list-unstyled(false);
   li {
     margin-bottom: ms(0)/2;
   }
@@ -54,7 +57,13 @@ blockquote {
   }
 }
 
-a { text-decoration: none; }
+a {
+  color: $link-color;
+  text-decoration: none;
+  @include scut-selected(true) {
+    color: darken($link-color, 10%);
+  }
+}
 
 hr {
   border-style: solid;
@@ -79,9 +88,32 @@ body { @include container(70em); }
 
 .site-title {
   text-align: center;
+  margin-bottom: 40px;
   @include span(full);
 }
 
-.blog-post { @include span(75%); }
+.blog-post {
+  margin-bottom: 100px;
+  @include span(75%);
+  @include scut-border(1px solid $light-gray, n y n n);
+}
 
 .sidebar { @include span(25%); }
+
+
+/* -------------------------------------------------------------------------*/
+/* UI Components */
+
+.page-back {
+  text-indent: -9999px;
+  @include scut-relative;
+  @include scut-circle(2em, $light-gray);
+  @include scut-selected(true) {
+    background-color: darken($light-gray, 10%);
+  }
+  &:before {
+    content: "";
+    @include scut-center-absolutely(.75em .75em);
+    @include scut-triangle(left, .75em, white);
+  }
+}

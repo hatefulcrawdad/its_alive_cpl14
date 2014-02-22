@@ -1,76 +1,88 @@
+/*
+* Scut, a collection of Sass utilities to ease and improve our implementations of common style-code patterns.
+* v0.9.1
+* Docs at http://davidtheclark.github.io/scut
+*/
 /* -------------------------------------------------------------------------*/
 /* Typography */
-/* line 23, ../scss/screen.scss */
+/* line 25, ../scss/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1rem 0;
 }
 
-/* line 26, ../scss/screen.scss */
+/* line 28, ../scss/screen.scss */
 h1 {
   font-size: 3rem;
 }
 
-/* line 27, ../scss/screen.scss */
+/* line 29, ../scss/screen.scss */
 h2 {
   font-size: 2.61803rem;
 }
 
-/* line 28, ../scss/screen.scss */
+/* line 30, ../scss/screen.scss */
 h3 {
   font-size: 1.8541rem;
 }
 
-/* line 29, ../scss/screen.scss */
+/* line 31, ../scss/screen.scss */
 h4 {
   font-size: 1.61803rem;
 }
 
-/* line 30, ../scss/screen.scss */
+/* line 32, ../scss/screen.scss */
 h5 {
   font-size: 1.1459rem;
 }
 
-/* line 31, ../scss/screen.scss */
+/* line 33, ../scss/screen.scss */
 h6 {
   font-size: 1rem;
 }
 
-/* line 33, ../scss/screen.scss */
+/* line 35, ../scss/screen.scss */
 p {
   font-size: 1rem;
   line-height: 1.5;
   margin: 0 0 1.61803rem 0;
 }
 
-/* line 39, ../scss/screen.scss */
+/* line 41, ../scss/screen.scss */
 ul,
 ol {
   margin: 0;
   font-size: 1rem;
+  list-style-type: none;
+  padding-left: 0;
 }
-/* line 43, ../scss/screen.scss */
+/* line 46, ../scss/screen.scss */
 ul li,
 ol li {
   margin-bottom: 0.5rem;
 }
 
-/* line 48, ../scss/screen.scss */
+/* line 51, ../scss/screen.scss */
 blockquote {
   border-left: solid 3px #dddddd;
   padding: 6px 10% 6px 20px;
 }
-/* line 51, ../scss/screen.scss */
+/* line 54, ../scss/screen.scss */
 blockquote p {
   margin-bottom: 0;
   font-style: italic;
 }
 
-/* line 57, ../scss/screen.scss */
+/* line 60, ../scss/screen.scss */
 a {
+  color: blue;
   text-decoration: none;
 }
+/* line 513, ../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/scut-0.9.1/dist/_scut.scss */
+a:hover, a:focus, a:active {
+  color: #0000cc;
+}
 
-/* line 59, ../scss/screen.scss */
+/* line 68, ../scss/screen.scss */
 hr {
   border-style: solid;
   border-width: 1px 0 0;
@@ -81,7 +93,7 @@ hr {
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
-/* line 71, ../scss/screen.scss */
+/* line 80, ../scss/screen.scss */
 img {
   max-width: 100%;
   margin-bottom: 1rem;
@@ -94,7 +106,7 @@ img {
   box-sizing: border-box;
 }
 
-/* line 78, ../scss/screen.scss */
+/* line 87, ../scss/screen.scss */
 body {
   max-width: 70em;
   margin-left: auto;
@@ -107,27 +119,67 @@ body::after {
   clear: both;
 }
 
-/* line 80, ../scss/screen.scss */
+/* line 89, ../scss/screen.scss */
 .site-title {
   text-align: center;
+  margin-bottom: 40px;
   width: 100%;
   float: left;
-  padding-left: 1.38889%;
-  padding-right: 1.38889%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
 }
 
-/* line 85, ../scss/screen.scss */
+/* line 95, ../scss/screen.scss */
 .blog-post {
+  margin-bottom: 100px;
   width: 75%;
   float: left;
-  padding-left: 1.38889%;
-  padding-right: 1.38889%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  border-right: 1px solid #dddddd;
 }
 
-/* line 87, ../scss/screen.scss */
+/* line 101, ../scss/screen.scss */
 .sidebar {
   width: 25%;
   float: left;
-  padding-left: 1.38889%;
-  padding-right: 1.38889%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+/* -------------------------------------------------------------------------*/
+/* UI Components */
+/* line 107, ../scss/screen.scss */
+.page-back {
+  text-indent: -9999px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #dddddd;
+  height: 2em;
+  width: 2em;
+}
+/* line 513, ../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/scut-0.9.1/dist/_scut.scss */
+.page-back:hover, .page-back:focus, .page-back:active {
+  background-color: #c4c4c4;
+}
+/* line 114, ../scss/screen.scss */
+.page-back:before {
+  content: "";
+  position: absolute;
+  width: 0.75em;
+  left: 50%;
+  margin-left: -0.375em;
+  height: 0.75em;
+  top: 50%;
+  margin-top: -0.375em;
+  display: inline-block;
+  height: 0;
+  width: 0;
+  -webkit-transform: rotate(360deg);
+  border-width: 0.375em 0.75em;
+  border-style: solid;
+  border-color: transparent;
+  border-right-color: white;
+  border-left-width: 0;
 }
