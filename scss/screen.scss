@@ -17,9 +17,6 @@ $map: (
 $ms-base: 1rem 3rem;
 $ms-ratio: $golden;
 
-// Sassy Buttons
-$sb-text-style: "none";
-
 // Variables
 $light-gray: #ddd !default;
 $mid-gray: #aaa !default;
@@ -155,7 +152,7 @@ body { @include container(70em); }
 
 .button {
   text-transform: uppercase;
-  @include sassy-button("flat", 10px, .7rem, $main-red);
+  @include sassy-button("flat", 10px, .7rem, $main-red, $text-style: "none");
   @include scut-selected(true) { color: #fff; }
 }
 
