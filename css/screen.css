@@ -5,86 +5,86 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1rem 0;
 }
 
-/* line 27, ../scss/screen.scss */
+/* line 25, ../scss/screen.scss */
 h1 {
   font-size: 3rem;
 }
 
-/* line 28, ../scss/screen.scss */
+/* line 26, ../scss/screen.scss */
 h2 {
   font-size: 2.61803rem;
 }
 
-/* line 29, ../scss/screen.scss */
+/* line 27, ../scss/screen.scss */
 h3 {
   font-size: 1.8541rem;
 }
 
-/* line 30, ../scss/screen.scss */
+/* line 28, ../scss/screen.scss */
 h4 {
   font-size: 1.61803rem;
 }
 
-/* line 31, ../scss/screen.scss */
+/* line 29, ../scss/screen.scss */
 h5 {
   font-size: 1.1459rem;
 }
 
-/* line 32, ../scss/screen.scss */
+/* line 30, ../scss/screen.scss */
 h6 {
   font-size: 1rem;
 }
 
-/* line 34, ../scss/screen.scss */
+/* line 32, ../scss/screen.scss */
 p {
   font-size: 1rem;
   line-height: 1.5;
   margin: 0 0 1.61803rem 0;
 }
 
-/* line 40, ../scss/screen.scss */
+/* line 38, ../scss/screen.scss */
 ul,
 ol {
-  margin: 0;
   font-size: 1rem;
+  margin: 0;
 }
-/* line 44, ../scss/screen.scss */
+/* line 42, ../scss/screen.scss */
 ul li,
 ol li {
   margin-bottom: 0.5rem;
 }
 
-/* line 49, ../scss/screen.scss */
+/* line 47, ../scss/screen.scss */
 blockquote {
   border-left: solid 3px #dddddd;
   padding: 6px 10% 6px 20px;
 }
-/* line 52, ../scss/screen.scss */
+/* line 50, ../scss/screen.scss */
 blockquote p {
-  margin-bottom: 0;
   font-style: italic;
+  margin-bottom: 0;
 }
 
-/* line 58, ../scss/screen.scss */
+/* line 56, ../scss/screen.scss */
 a {
   text-decoration: none;
 }
 
-/* line 60, ../scss/screen.scss */
+/* line 58, ../scss/screen.scss */
 hr {
+  border-color: #dddddd;
   border-style: solid;
   border-width: 1px 0 0;
-  border-color: #dddddd;
   margin: 1rem auto 1.1459rem;
   width: 4.23607rem;
 }
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
-/* line 72, ../scss/screen.scss */
+/* line 70, ../scss/screen.scss */
 img {
-  max-width: 100%;
   margin-bottom: 1rem;
+  max-width: 100%;
 }
 
 /* line 11, ../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/susy-2.0.0.rc.1/sass/susy/language/susy/_box-sizing.scss */
@@ -94,7 +94,7 @@ img {
   box-sizing: border-box;
 }
 
-/* line 79, ../scss/screen.scss */
+/* line 77, ../scss/screen.scss */
 body {
   max-width: 70em;
   margin-left: auto;
@@ -107,7 +107,7 @@ body::after {
   clear: both;
 }
 
-/* line 81, ../scss/screen.scss */
+/* line 79, ../scss/screen.scss */
 .site-title {
   text-align: center;
   width: 100%;
@@ -116,7 +116,7 @@ body::after {
   padding-right: 1.38889%;
 }
 
-/* line 86, ../scss/screen.scss */
+/* line 84, ../scss/screen.scss */
 .blog-post {
   width: 75%;
   float: left;
@@ -124,7 +124,7 @@ body::after {
   padding-right: 1.38889%;
 }
 
-/* line 88, ../scss/screen.scss */
+/* line 86, ../scss/screen.scss */
 .sidebar {
   width: 25%;
   float: left;
