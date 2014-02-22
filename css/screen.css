@@ -5,49 +5,85 @@
 */
 /* -------------------------------------------------------------------------*/
 /* Typography */
-/* line 30, ../scss/screen.scss */
+/* line 37, ../scss/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Titillium Web', sans-serif;
   margin: 0 0 0.5rem 0;
 }
 
-/* line 34, ../scss/screen.scss */
+/* line 41, ../scss/screen.scss */
 h1 {
-  font-size: 3rem;
+  font-size: 2.61803rem;
 }
-/* line 37, ../scss/screen.scss */
+@media (min-width: 640px) {
+  /* line 41, ../scss/screen.scss */
+  h1 {
+    font-size: 3rem;
+  }
+}
+/* line 45, ../scss/screen.scss */
 .site-title h1 {
   color: #a6450b;
-  font-size: 2.61803rem;
+  font-size: 1.8541rem;
   margin: 60px 0 0;
 }
-
-/* line 43, ../scss/screen.scss */
-h2 {
-  font-size: 2.61803rem;
+@media (min-width: 640px) {
+  /* line 45, ../scss/screen.scss */
+  .site-title h1 {
+    font-size: 2.61803rem;
+  }
 }
 
-/* line 44, ../scss/screen.scss */
-h3 {
+/* line 52, ../scss/screen.scss */
+h2 {
   font-size: 1.8541rem;
 }
+@media (min-width: 640px) {
+  /* line 52, ../scss/screen.scss */
+  h2 {
+    font-size: 2.61803rem;
+  }
+}
 
-/* line 45, ../scss/screen.scss */
-h4 {
+/* line 56, ../scss/screen.scss */
+h3 {
   font-size: 1.61803rem;
 }
-
-/* line 46, ../scss/screen.scss */
-h5 {
-  font-size: 1.1459rem;
+@media (min-width: 640px) {
+  /* line 56, ../scss/screen.scss */
+  h3 {
+    font-size: 1.8541rem;
+  }
 }
 
-/* line 47, ../scss/screen.scss */
+/* line 60, ../scss/screen.scss */
+h4 {
+  font-size: 1.1459rem;
+}
+@media (min-width: 640px) {
+  /* line 60, ../scss/screen.scss */
+  h4 {
+    font-size: 1.61803rem;
+  }
+}
+
+/* line 64, ../scss/screen.scss */
+h5 {
+  font-size: 1rem;
+}
+@media (min-width: 640px) {
+  /* line 64, ../scss/screen.scss */
+  h5 {
+    font-size: 1.1459rem;
+  }
+}
+
+/* line 68, ../scss/screen.scss */
 h6 {
   font-size: 1rem;
 }
 
-/* line 49, ../scss/screen.scss */
+/* line 70, ../scss/screen.scss */
 p {
   color: #444444;
   font-size: 1rem;
@@ -55,20 +91,20 @@ p {
   margin: 0 0 1.61803rem 0;
 }
 
-/* line 55, ../scss/screen.scss */
+/* line 76, ../scss/screen.scss */
 .tagline {
   color: #aaaaaa;
   font-size: 1.1459rem;
   font-weight: 300;
 }
 
-/* line 60, ../scss/screen.scss */
+/* line 81, ../scss/screen.scss */
 .lead {
   font-size: 1.1459rem;
   font-weight: 300;
 }
 
-/* line 65, ../scss/screen.scss */
+/* line 86, ../scss/screen.scss */
 ul,
 ol {
   font-size: 1rem;
@@ -76,13 +112,13 @@ ol {
   list-style-type: none;
   padding-left: 0;
 }
-/* line 70, ../scss/screen.scss */
+/* line 91, ../scss/screen.scss */
 ul li,
 ol li {
   margin-bottom: 0.5rem;
 }
 
-/* line 75, ../scss/screen.scss */
+/* line 96, ../scss/screen.scss */
 blockquote {
   border-left: solid 6px #dddddd;
   margin: 1.8541rem 0 1.8541rem 1.8541rem;
@@ -94,20 +130,20 @@ blockquote {
   -webkit-border-bottom-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-/* line 80, ../scss/screen.scss */
+/* line 101, ../scss/screen.scss */
 blockquote p {
   color: #aaaaaa;
   font-style: italic;
   line-height: 1.7;
   margin-bottom: 0;
 }
-/* line 86, ../scss/screen.scss */
+/* line 107, ../scss/screen.scss */
 blockquote a {
   display: inline-block;
   margin-top: 0.5rem;
 }
 
-/* line 92, ../scss/screen.scss */
+/* line 113, ../scss/screen.scss */
 a {
   color: #a6450b;
   text-decoration: none;
@@ -119,7 +155,7 @@ a:hover, a:focus, a:active {
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
-/* line 104, ../scss/screen.scss */
+/* line 125, ../scss/screen.scss */
 hr {
   border-style: solid;
   border-width: 1px 0 0;
@@ -128,7 +164,7 @@ hr {
   width: 4.23607rem;
 }
 
-/* line 112, ../scss/screen.scss */
+/* line 133, ../scss/screen.scss */
 img {
   margin-bottom: 1rem;
   max-width: 100%;
@@ -144,13 +180,13 @@ img {
   box-sizing: border-box;
 }
 
-/* line 120, ../scss/screen.scss */
+/* line 141, ../scss/screen.scss */
 html {
   border-top: 44px solid #444444;
   border-bottom: 144px solid #dddddd;
 }
 
-/* line 125, ../scss/screen.scss */
+/* line 146, ../scss/screen.scss */
 body {
   max-width: 70em;
   margin-left: auto;
@@ -163,7 +199,7 @@ body::after {
   clear: both;
 }
 
-/* line 127, ../scss/screen.scss */
+/* line 148, ../scss/screen.scss */
 .site-title {
   margin-bottom: 100px;
   text-align: center;
@@ -173,37 +209,72 @@ body::after {
   padding-right: 2.5%;
 }
 
-/* line 133, ../scss/screen.scss */
+/* line 154, ../scss/screen.scss */
 .blog-post {
   margin-bottom: 100px;
-  width: 75%;
+  width: 100%;
   float: left;
   padding-left: 2.5%;
   padding-right: 2.5%;
-  padding-right: 90px;
+}
+@media (min-width: 640px) {
+  /* line 154, ../scss/screen.scss */
+  .blog-post {
+    width: 75%;
+    float: left;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-right: 90px;
+  }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* line 154, ../scss/screen.scss */
+  .blog-post {
+    padding-right: 40px;
+  }
 }
 
-/* line 139, ../scss/screen.scss */
+/* line 168, ../scss/screen.scss */
 .sidebar {
   background-color: rgba(221, 221, 221, 0.3);
   padding-top: 30px;
   padding-bottom: 30px;
-  width: 25%;
+  width: 100%;
   float: left;
   padding-left: 2.5%;
   padding-right: 2.5%;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
 }
-/* line 146, ../scss/screen.scss */
+@media (min-width: 640px) {
+  /* line 168, ../scss/screen.scss */
+  .sidebar {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    width: 25%;
+    float: left;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+}
+@media (max-width: 1025px) {
+  /* line 168, ../scss/screen.scss */
+  .sidebar {
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+/* line 183, ../scss/screen.scss */
 .sidebar p {
   color: #aaaaaa;
 }
 
 /* -------------------------------------------------------------------------*/
 /* UI Components */
-/* line 153, ../scss/screen.scss */
+/* line 190, ../scss/screen.scss */
 .button {
   text-transform: uppercase;
   font-size: 0.7rem;
@@ -251,22 +322,22 @@ body::after {
   color: #fff;
 }
 
-/* line 159, ../scss/screen.scss */
+/* line 196, ../scss/screen.scss */
 .pagination {
   padding-top: 1.61803rem;
   margin-top: 2.61803rem;
   border-top: 1px solid #dddddd;
 }
-/* line 163, ../scss/screen.scss */
+/* line 200, ../scss/screen.scss */
 .pagination .prev {
   float: left;
 }
-/* line 164, ../scss/screen.scss */
+/* line 201, ../scss/screen.scss */
 .pagination .next {
   float: right;
 }
 
-/* line 167, ../scss/screen.scss */
+/* line 204, ../scss/screen.scss */
 .page-back {
   color: #aaaaaa;
   font-size: .8rem;
@@ -286,7 +357,7 @@ body::after {
   background-color: #c4c4c4;
   color: #aaaaaa;
 }
-/* line 180, ../scss/screen.scss */
+/* line 217, ../scss/screen.scss */
 .page-back:before {
   content: "";
   position: absolute;
