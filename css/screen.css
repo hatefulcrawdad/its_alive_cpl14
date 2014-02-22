@@ -5,98 +5,136 @@
 */
 /* -------------------------------------------------------------------------*/
 /* Typography */
-/* line 25, ../scss/screen.scss */
+/* line 29, ../scss/screen.scss */
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 1rem 0;
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0 0 0.5rem 0;
 }
 
-/* line 28, ../scss/screen.scss */
+/* line 33, ../scss/screen.scss */
 h1 {
   font-size: 3rem;
 }
+/* line 36, ../scss/screen.scss */
+.site-title h1 {
+  color: #a6450b;
+  font-size: 2.61803rem;
+  margin: 60px 0 0;
+}
 
-/* line 29, ../scss/screen.scss */
+/* line 42, ../scss/screen.scss */
 h2 {
   font-size: 2.61803rem;
 }
 
-/* line 30, ../scss/screen.scss */
+/* line 43, ../scss/screen.scss */
 h3 {
   font-size: 1.8541rem;
 }
 
-/* line 31, ../scss/screen.scss */
+/* line 44, ../scss/screen.scss */
 h4 {
   font-size: 1.61803rem;
 }
 
-/* line 32, ../scss/screen.scss */
+/* line 45, ../scss/screen.scss */
 h5 {
   font-size: 1.1459rem;
 }
 
-/* line 33, ../scss/screen.scss */
+/* line 46, ../scss/screen.scss */
 h6 {
   font-size: 1rem;
 }
 
-/* line 35, ../scss/screen.scss */
+/* line 48, ../scss/screen.scss */
 p {
+  color: #444444;
   font-size: 1rem;
   line-height: 1.5;
   margin: 0 0 1.61803rem 0;
 }
 
-/* line 41, ../scss/screen.scss */
+/* line 54, ../scss/screen.scss */
+.tagline {
+  color: #aaaaaa;
+  font-size: 1.1459rem;
+  font-weight: 300;
+}
+
+/* line 59, ../scss/screen.scss */
+.lead {
+  font-size: 1.1459rem;
+  font-weight: 300;
+}
+
+/* line 64, ../scss/screen.scss */
 ul,
 ol {
-  margin: 0;
   font-size: 1rem;
+  margin: 0;
   list-style-type: none;
   padding-left: 0;
 }
-/* line 46, ../scss/screen.scss */
+/* line 69, ../scss/screen.scss */
 ul li,
 ol li {
   margin-bottom: 0.5rem;
 }
 
-/* line 51, ../scss/screen.scss */
+/* line 74, ../scss/screen.scss */
 blockquote {
-  border-left: solid 3px #dddddd;
-  padding: 6px 10% 6px 20px;
+  border-left: solid 6px #dddddd;
+  margin: 1.8541rem 0 1.8541rem 1.8541rem;
+  padding: 12px 10% 12px 20px;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-/* line 54, ../scss/screen.scss */
+/* line 79, ../scss/screen.scss */
 blockquote p {
-  margin-bottom: 0;
+  color: #aaaaaa;
   font-style: italic;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+/* line 85, ../scss/screen.scss */
+blockquote a {
+  display: inline-block;
+  margin-top: 0.5rem;
 }
 
-/* line 60, ../scss/screen.scss */
+/* line 91, ../scss/screen.scss */
 a {
-  color: blue;
+  color: #a6450b;
   text-decoration: none;
 }
 /* line 513, ../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/scut-0.9.1/dist/_scut.scss */
 a:hover, a:focus, a:active {
-  color: #0000cc;
-}
-
-/* line 68, ../scss/screen.scss */
-hr {
-  border-style: solid;
-  border-width: 1px 0 0;
-  border-color: #dddddd;
-  margin: 1rem auto 1.1459rem;
-  width: 4.23607rem;
+  color: #763108;
 }
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
-/* line 80, ../scss/screen.scss */
+/* line 103, ../scss/screen.scss */
+hr {
+  border-style: solid;
+  border-width: 1px 0 0;
+  border-color: #dddddd;
+  margin: 1.8541rem auto 1.61803rem;
+  width: 4.23607rem;
+}
+
+/* line 111, ../scss/screen.scss */
 img {
-  max-width: 100%;
   margin-bottom: 1rem;
+  max-width: 100%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 
 /* line 11, ../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/susy-2.0.0.rc.1/sass/susy/language/susy/_box-sizing.scss */
@@ -106,7 +144,13 @@ img {
   box-sizing: border-box;
 }
 
-/* line 87, ../scss/screen.scss */
+/* line 119, ../scss/screen.scss */
+html {
+  border-top: 44px solid #444444;
+  border-bottom: 144px solid #dddddd;
+}
+
+/* line 124, ../scss/screen.scss */
 body {
   max-width: 70em;
   margin-left: auto;
@@ -119,39 +163,54 @@ body::after {
   clear: both;
 }
 
-/* line 89, ../scss/screen.scss */
+/* line 126, ../scss/screen.scss */
 .site-title {
+  margin-bottom: 100px;
   text-align: center;
-  margin-bottom: 40px;
   width: 100%;
   float: left;
   padding-left: 2.5%;
   padding-right: 2.5%;
 }
 
-/* line 95, ../scss/screen.scss */
+/* line 132, ../scss/screen.scss */
 .blog-post {
   margin-bottom: 100px;
   width: 75%;
   float: left;
   padding-left: 2.5%;
   padding-right: 2.5%;
-  border-right: 1px solid #dddddd;
+  padding-right: 90px;
 }
 
-/* line 101, ../scss/screen.scss */
+/* line 138, ../scss/screen.scss */
 .sidebar {
+  background-color: rgba(221, 221, 221, 0.3);
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 25%;
   float: left;
   padding-left: 2.5%;
   padding-right: 2.5%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 145, ../scss/screen.scss */
+.sidebar p {
+  color: #aaaaaa;
 }
 
 /* -------------------------------------------------------------------------*/
 /* UI Components */
-/* line 107, ../scss/screen.scss */
+/* line 152, ../scss/screen.scss */
 .page-back {
-  text-indent: -9999px;
+  color: #aaaaaa;
+  font-size: .8rem;
+  line-height: 1.6rem;
+  margin-left: -34px;
+  text-indent: 34px;
+  text-transform: uppercase;
   position: relative;
   border-radius: 50%;
   display: inline-block;
@@ -162,8 +221,9 @@ body::after {
 /* line 513, ../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/scut-0.9.1/dist/_scut.scss */
 .page-back:hover, .page-back:focus, .page-back:active {
   background-color: #c4c4c4;
+  color: #aaaaaa;
 }
-/* line 114, ../scss/screen.scss */
+/* line 165, ../scss/screen.scss */
 .page-back:before {
   content: "";
   position: absolute;

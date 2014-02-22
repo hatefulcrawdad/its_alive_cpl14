@@ -1,4 +1,5 @@
 // Imports
+@import "compass/css3";
 @import "susy";
 @import "modular-scale";
 @import "scut";
@@ -17,15 +18,27 @@ $ms-ratio: $golden;
 
 // Variables
 $light-gray: #ddd !default;
-$link-color: blue !default;
+$mid-gray: #aaa !default;
+$dark-gray: #444 !default;
+$main-red: #a6450b !default;
+$link-color: $main-red !default;
 
 
 /* -------------------------------------------------------------------------*/
 /* Typography */
 h1,h2,h3,h4,h5,h6 {
-  margin: 0 0 ms(0) 0;
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0 0 (ms(0)/2) 0;
 }
-h1 { font-size: ms(5); }
+h1 {
+  font-size: ms(5);
+
+  .site-title & {
+    color: $main-red;
+    font-size: ms(4);
+    margin: 60px 0 0;
+  }
+}
 h2 { font-size: ms(4); }
 h3 { font-size: ms(3); }
 h4 { font-size: ms(2); }
@@ -33,15 +46,25 @@ h5 { font-size: ms(1); }
 h6 { font-size: ms(0); }
 
 p {
+  color: $dark-gray;
   font-size: ms(0);
   line-height: 1.5;
   margin: 0 0 ms(2) 0;
 }
+.tagline {
+  color: $mid-gray;
+  font-size: ms(1);
+  font-weight: 300;
+}
+.lead {
+  font-size: ms(1);
+  font-weight: 300;
+}
 
 ul,
 ol {
-  margin: 0;
   font-size: ms(0);
+  margin: 0;
   @include scut-list-unstyled(false);
   li {
     margin-bottom: ms(0)/2;
@@ -49,11 +72,19 @@ ol {
 }
 
 blockquote {
-  border-left: solid 3px $light-gray;
-  padding: 6px 10% 6px 20px;
+  border-left: solid 6px $light-gray;
+  margin: ms(3) 0 ms(3) ms(3);
+  padding: 12px 10% 12px 20px;
+  @include border-left-radius(10px);
   p {
-    margin-bottom: 0;
+    color: $mid-gray;
     font-style: italic;
+    line-height: 1.7;
+    margin-bottom: 0;
+  }
+  a {
+    display: inline-block;
+    margin-top: ms(0)/2;
   }
 }
 
@@ -65,51 +96,71 @@ a {
   }
 }
 
-hr {
-  border-style: solid;
-  border-width: 1px 0 0;
-  border-color: $light-gray;
-  margin: ms(0) auto ms(1);
-  width: ms(6);
-}
-
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
 
+hr {
+  border-style: solid;
+  border-width: 1px 0 0;
+  border-color: $light-gray;
+  margin: ms(3) auto ms(2);
+  width: ms(6);
+}
+
 img {
-  max-width: 100%;
   margin-bottom: ms(0);
+  max-width: 100%;
+  @include border-radius(10px);
 }
 
 * { @include border-box-sizing; }
 
+html {
+  @include scut-border(44px solid $dark-gray, y n n n);
+  @include scut-border(144px solid $light-gray, n n y n);
+}
+
 body { @include container(70em); }
 
 .site-title {
+  margin-bottom: 100px;
   text-align: center;
-  margin-bottom: 40px;
   @include span(full);
 }
 
 .blog-post {
   margin-bottom: 100px;
   @include span(75%);
-  @include scut-border(1px solid $light-gray, n y n n);
+  padding-right: 90px;
 }
 
-.sidebar { @include span(25%); }
+.sidebar {
+  background-color: rgba($light-gray, 0.3);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @include span(25%);
+  @include border-radius(10px);
+
+  p { color: $mid-gray; }
+}
 
 
 /* -------------------------------------------------------------------------*/
 /* UI Components */
 
 .page-back {
-  text-indent: -9999px;
+  color: $mid-gray;
+  font-size: .8rem;
+  line-height: 1.6rem;
+  margin-left: -34px;
+  text-indent: 34px;
+  text-transform: uppercase;
   @include scut-relative;
   @include scut-circle(2em, $light-gray);
   @include scut-selected(true) {
     background-color: darken($light-gray, 10%);
+    color: $mid-gray;
   }
   &:before {
     content: "";
