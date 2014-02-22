@@ -3,6 +3,7 @@
 @import "susy";
 @import "modular-scale";
 @import "scut";
+@import "sassybuttons";
 
 // Susy Grid setup
 $map: (
@@ -15,6 +16,9 @@ $map: (
 // Modular Scale
 $ms-base: 1rem 3rem;
 $ms-ratio: $golden;
+
+// Sassy Buttons
+$sb-text-style: "none";
 
 // Variables
 $light-gray: #ddd !default;
@@ -148,6 +152,20 @@ body { @include container(70em); }
 
 /* -------------------------------------------------------------------------*/
 /* UI Components */
+
+.button {
+  text-transform: uppercase;
+  @include sassy-button("flat", 10px, .7rem, $main-red);
+  @include scut-selected(true) { color: #fff; }
+}
+
+.pagination {
+  padding-top: ms(2);
+  margin-top: ms(4);
+  @include scut-border(1px solid $light-gray, y n n n);
+  .prev { float: left; }
+  .next { float: right; }
+}
 
 .page-back {
   color: $mid-gray;
