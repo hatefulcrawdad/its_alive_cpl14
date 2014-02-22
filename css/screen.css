@@ -210,6 +210,32 @@ body::after {
 }
 
 /* line 154, ../scss/screen.scss */
+.blog-posts {
+  width: 100%;
+  float: left;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+/* line 156, ../scss/screen.scss */
+.blog-post-snippet {
+  margin-bottom: 60px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 160, ../scss/screen.scss */
+.blog-post-snippet:nth-child(odd) {
+  background: #dddddd url('../img/blog-snippet.jpg?1393098932') right top no-repeat;
+  padding: 40px 50% 40px 40px;
+}
+/* line 164, ../scss/screen.scss */
+.blog-post-snippet:nth-child(even) {
+  background: #dddddd url('../img/blog-snippet.jpg?1393098932') left top no-repeat;
+  padding: 40px 40px 40px 50%;
+}
+
+/* line 170, ../scss/screen.scss */
 .blog-post {
   margin-bottom: 100px;
   width: 100%;
@@ -218,7 +244,7 @@ body::after {
   padding-right: 2.5%;
 }
 @media (min-width: 640px) {
-  /* line 154, ../scss/screen.scss */
+  /* line 170, ../scss/screen.scss */
   .blog-post {
     width: 75%;
     float: left;
@@ -228,13 +254,13 @@ body::after {
   }
 }
 @media (min-width: 641px) and (max-width: 1024px) {
-  /* line 154, ../scss/screen.scss */
+  /* line 170, ../scss/screen.scss */
   .blog-post {
     padding-right: 40px;
   }
 }
 
-/* line 168, ../scss/screen.scss */
+/* line 184, ../scss/screen.scss */
 .sidebar {
   background-color: rgba(221, 221, 221, 0.3);
   padding-top: 30px;
@@ -245,7 +271,7 @@ body::after {
   padding-right: 2.5%;
 }
 @media (min-width: 640px) {
-  /* line 168, ../scss/screen.scss */
+  /* line 184, ../scss/screen.scss */
   .sidebar {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -257,7 +283,7 @@ body::after {
   }
 }
 @media (max-width: 1025px) {
-  /* line 168, ../scss/screen.scss */
+  /* line 184, ../scss/screen.scss */
   .sidebar {
     -moz-border-radius-topright: 0px;
     -webkit-border-top-right-radius: 0px;
@@ -267,14 +293,14 @@ body::after {
     border-bottom-right-radius: 0px;
   }
 }
-/* line 183, ../scss/screen.scss */
+/* line 199, ../scss/screen.scss */
 .sidebar p {
   color: #aaaaaa;
 }
 
 /* -------------------------------------------------------------------------*/
 /* UI Components */
-/* line 190, ../scss/screen.scss */
+/* line 206, ../scss/screen.scss */
 .button {
   text-transform: uppercase;
   font-size: 0.7rem;
@@ -322,22 +348,24 @@ body::after {
   color: #fff;
 }
 
-/* line 196, ../scss/screen.scss */
+/* line 212, ../scss/screen.scss */
 .pagination {
   padding-top: 1.61803rem;
   margin-top: 2.61803rem;
+  margin-bottom: 2.61803rem;
+  overflow: hidden;
   border-top: 1px solid #dddddd;
 }
-/* line 200, ../scss/screen.scss */
+/* line 218, ../scss/screen.scss */
 .pagination .prev {
   float: left;
 }
-/* line 201, ../scss/screen.scss */
+/* line 219, ../scss/screen.scss */
 .pagination .next {
   float: right;
 }
 
-/* line 204, ../scss/screen.scss */
+/* line 222, ../scss/screen.scss */
 .page-back {
   color: #aaaaaa;
   font-size: .8rem;
@@ -357,7 +385,7 @@ body::after {
   background-color: #c4c4c4;
   color: #aaaaaa;
 }
-/* line 217, ../scss/screen.scss */
+/* line 235, ../scss/screen.scss */
 .page-back:before {
   content: "";
   position: absolute;

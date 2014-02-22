@@ -151,6 +151,22 @@ body { @include container(70em); }
   @include span(full);
 }
 
+.blog-posts { @include span(full); }
+
+.blog-post-snippet {
+  margin-bottom: 60px;
+  @include border-radius(10px);
+
+  &:nth-child(odd) {
+    background: $light-gray image-url('blog-snippet.jpg') right top no-repeat;
+    padding: 40px 50% 40px 40px;
+  }
+  &:nth-child(even) {
+    background: $light-gray image-url('blog-snippet.jpg') left top no-repeat;
+    padding: 40px 40px 40px 50%;
+  }
+}
+
 .blog-post {
   margin-bottom: 100px;
   @include span(full);
@@ -196,6 +212,8 @@ body { @include container(70em); }
 .pagination {
   padding-top: ms(2);
   margin-top: ms(4);
+  margin-bottom: ms(4);
+  overflow: hidden;
   @include scut-border(1px solid $light-gray, y n n n);
   .prev { float: left; }
   .next { float: right; }
