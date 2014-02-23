@@ -3,7 +3,7 @@
 @import "susy";
 @import "modular-scale";
 @import "scut";
-@import "sassybuttons";
+// @import "sassybuttons";
 
 // Susy Grid setup
 $map: (
@@ -150,19 +150,19 @@ body { @include container(70em); }
 /* -------------------------------------------------------------------------*/
 /* UI Components */
 
-.button {
-  text-transform: uppercase;
-  @include sassy-button("flat", 10px, .7rem, $main-red, $text-style: "none");
-  @include scut-selected(true) { color: #fff; }
-}
+// .button {
+//   text-transform: uppercase;
+//   @include sassy-button("flat", 10px, .7rem, $main-red, $text-style: "none");
+//   @include scut-selected(true) { color: #fff; }
+// }
 
-.pagination {
-  padding-top: ms(2);
-  margin-top: ms(4);
-  @include scut-border(1px solid $light-gray, y n n n);
-  .prev { float: left; }
-  .next { float: right; }
-}
+// .pagination {
+//   padding-top: ms(2);
+//   margin-top: ms(4);
+//   @include scut-border(1px solid $light-gray, y n n n);
+//   .prev { float: left; }
+//   .next { float: right; }
+// }
 
 .page-back {
   color: $mid-gray;
