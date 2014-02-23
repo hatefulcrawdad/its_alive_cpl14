@@ -2,7 +2,7 @@
 @import "compass/css3";
 @import "susy";
 @import "modular-scale";
-@import "scut";
+// @import "scut";
 
 // Susy Grid setup
 $map: (
@@ -65,16 +65,16 @@ ul,
 ol {
   font-size: ms(0);
   margin: 0;
-  @include scut-list-unstyled(false);
+  // @include scut-list-unstyled(false);
   li {
     margin-bottom: ms(0)/2;
   }
 }
 
 blockquote {
-  border-left: solid 6px $light-gray;
   margin: ms(3) 0 ms(3) ms(3);
   padding: 12px 10% 12px 20px;
+  // @include scut-border(6px solid $light-gray, n n n y);
   @include border-left-radius(10px);
   p {
     color: $mid-gray;
@@ -91,9 +91,9 @@ blockquote {
 a {
   color: $link-color;
   text-decoration: none;
-  @include scut-selected(true) {
-    color: darken($link-color, 10%);
-  }
+  // @include scut-selected(true) {
+  //   color: darken($link-color, 10%);
+  // }
 }
 
 
@@ -117,8 +117,8 @@ img {
 * { @include border-box-sizing; }
 
 html {
-  @include scut-border(44px solid $dark-gray, y n n n);
-  @include scut-border(144px solid $light-gray, n n y n);
+  // @include scut-border(44px solid $dark-gray, y n n n);
+  // @include scut-border(144px solid $light-gray, n n y n);
 }
 
 body { @include container(70em); }
@@ -156,15 +156,15 @@ body { @include container(70em); }
   margin-left: -34px;
   text-indent: 34px;
   text-transform: uppercase;
-  @include scut-relative;
-  @include scut-circle(2em, $light-gray);
-  @include scut-selected(true) {
-    background-color: darken($light-gray, 10%);
-    color: $mid-gray;
-  }
-  &:before {
-    content: "";
-    @include scut-center-absolutely(.75em .75em);
-    @include scut-triangle(left, .75em, white);
-  }
+  // @include scut-relative;
+  // @include scut-circle(2em, $light-gray);
+  // @include scut-selected(true) {
+  //   background-color: darken($light-gray, 10%);
+  //   color: $mid-gray;
+  // }
+  // &:before {
+  //   content: "";
+  //   @include scut-center-absolutely(.75em .75em);
+  //   @include scut-triangle(left, .75em, white);
+  // }
 }

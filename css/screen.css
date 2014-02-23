@@ -1,8 +1,3 @@
-/*
-* Scut, a collection of Sass utilities to ease and improve our implementations of common style-code patterns.
-* v0.9.1
-* Docs at http://davidtheclark.github.io/scut
-*/
 /* -------------------------------------------------------------------------*/
 /* Typography */
 /* line 29, ../scss/screen.scss */
@@ -73,8 +68,6 @@ ul,
 ol {
   font-size: 1rem;
   margin: 0;
-  list-style-type: none;
-  padding-left: 0;
 }
 /* line 69, ../scss/screen.scss */
 ul li,
@@ -84,7 +77,6 @@ ol li {
 
 /* line 74, ../scss/screen.scss */
 blockquote {
-  border-left: solid 6px #dddddd;
   margin: 1.8541rem 0 1.8541rem 1.8541rem;
   padding: 12px 10% 12px 20px;
   -moz-border-radius-topleft: 10px;
@@ -112,10 +104,6 @@ a {
   color: #a6450b;
   text-decoration: none;
 }
-/* line 513, ../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/scut-0.9.1/dist/_scut.scss */
-a:hover, a:focus, a:active {
-  color: #763108;
-}
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
@@ -142,12 +130,6 @@ img {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-/* line 119, ../scss/screen.scss */
-html {
-  border-top: 44px solid #444444;
-  border-bottom: 144px solid #dddddd;
 }
 
 /* line 124, ../scss/screen.scss */
@@ -211,35 +193,4 @@ body::after {
   margin-left: -34px;
   text-indent: 34px;
   text-transform: uppercase;
-  position: relative;
-  border-radius: 50%;
-  display: inline-block;
-  background-color: #dddddd;
-  height: 2em;
-  width: 2em;
-}
-/* line 513, ../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/scut-0.9.1/dist/_scut.scss */
-.page-back:hover, .page-back:focus, .page-back:active {
-  background-color: #c4c4c4;
-  color: #aaaaaa;
-}
-/* line 165, ../scss/screen.scss */
-.page-back:before {
-  content: "";
-  position: absolute;
-  width: 0.75em;
-  left: 50%;
-  margin-left: -0.375em;
-  height: 0.75em;
-  top: 50%;
-  margin-top: -0.375em;
-  display: inline-block;
-  height: 0;
-  width: 0;
-  -webkit-transform: rotate(360deg);
-  border-width: 0.375em 0.75em;
-  border-style: solid;
-  border-color: transparent;
-  border-right-color: white;
-  border-left-width: 0;
 }
