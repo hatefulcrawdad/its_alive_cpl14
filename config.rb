@@ -3,7 +3,7 @@ require "susy"
 require "modular-scale"
 require "scut"
 require "sassy-buttons"
-require "breakpoint"
+# require "breakpoint"
 
 # Set this to the root of your project when deployed:
 http_path = "/"
